@@ -1,0 +1,620 @@
+/* 泽森 */
+
+body{
+    margin: 0px;
+}
+/* 第一板块 */
+.wenZi{
+    top: 235px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    /* margin-top: 48px; */
+    word-wrap: break-word;
+    text-align: center;
+    color: #fff;
+    background-image: url(https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/psp-hero-banner-homepage-welcome.image.large_2x.jpg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-bottom: 140px;
+    font-size: 20px;
+}
+/* 第二板块 */
+/* 布局 */
+.qiPaa{
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    height: 158px;
+    padding-top: 58px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.qiPaa>a>img{
+    width: 68px;
+    height: 84px;
+    padding: 0 0 16px;
+}
+.qiPaa>a{
+    color: black;
+}
+@media screen and (max-width:1000px) {
+    .qiPaa{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,170px);
+        padding: 50px 0px 180px;
+    }
+}
+@media screen and (max-width:750px) {
+    .qiPaa{
+        display: grid;
+        grid-template-columns:repeat(2,auto);
+        padding: 30px 0 380px;
+    }
+    .wenZi>h1{
+        display: none;    
+    }
+    .moShu{
+        display: flex;
+        justify-content: center;
+        padding: 15px 0 0 0;
+    }
+}
+@media screen and (min-width:750px){
+    .moShu{
+        display: none;
+    }
+}
+/* 第三板块 */
+   /* 布局样式 */
+.yiXiangBuDao {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    margin-top: 30px;
+    width: 100%;
+    height: 166px;
+}
+.yiXiangBuDao >* {
+    border: green;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 48px;
+
+}
+.yiXiangBuDao >div:nth-child(2) {
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    padding: 0px 100px 0px 100px;
+}
+
+.yiXiangBuDao >div:nth-child(1) {
+    padding-right: 100px;
+}
+
+.yiXiangBuDao >div:nth-child(3) {
+    padding-left: 100px;
+}
+/* 响应式 */
+@media only screen and (max-width: 1000px) {
+    .yiXiangBuDao {
+        display: block;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+        height: 100%;
+    }
+   
+    .yiXiangBuDao >div:nth-child(2) {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .yiXiangBuDao >div:nth-child(1) {
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    .yiXiangBuDao >div:nth-child(3) {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+}
+/* 链接样式 */
+a{
+    text-decoration: none;
+    color: #0070c9
+}
+ a:hover{
+    text-decoration:underline;
+
+}
+
+/* 图片 */
+.tuPian {
+    display: flex;
+    justify-content: center;
+  
+}
+.daDou{
+    width: auto;
+    height: 40px;
+    margin-bottom: 14px;
+}
+.buYong{
+    font-size: 15px;
+}
+
+/* 小娟 1*/
+.apple {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.apple {
+    text-align: center;
+    border-top: rgba(0, 0, 0, 0.192) solid 1px;
+    border-bottom: rgba(0, 0, 0, 0.212) solid 1px;
+}
+
+.b {
+    color: rgba(0, 119, 255, 0.74);
+    margin-bottom: 40px;
+}
+
+.b:hover {
+    text-decoration: underline;
+}
+
+.c {
+    color: rgba(0, 119, 255, 0.74);
+}
+
+.c:hover {
+    text-decoration: underline;
+}
+
+.li {
+    justify-content: center;
+    text-align: center;
+    border-bottom: rgba(0, 0, 0, 0.212) solid 1px;
+    margin-top: 40px;
+}
+
+.d {
+    color: rgba(0, 119, 255, 0.74);
+    margin-bottom: 40px;
+}
+
+.d:hover {
+    text-decoration: underline;
+}
+
+.e {
+    color: rgba(0, 119, 255, 0.74);
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.e>*:hover {
+    text-decoration: underline;
+}
+
+.e>* {
+    margin-top: 15px;
+}
+
+.x {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.j {
+    margin-top: 40px;
+}
+
+.p {
+    margin-top: 40px;
+}
+
+@media screen and (max-width:400px) {
+    .apple {
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 100%;
+    }
+.e{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+}
+/* 小娟2 */
+.wenTi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: rgba(0, 0, 0, 0.212) solid 1px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.wenTi>div>img {
+    width: 400px;
+}
+
+.b {
+    text-align: center;
+    border-bottom: rgba(0, 0, 0, 0.212) solid 1px;
+    padding-bottom: 80px;
+}
+
+.a {
+    text-align: center;
+    padding-top: 30px;
+}
+.li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: rgba(0, 0, 0, 0.212) solid 1px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.li>div>img{
+    width: 300px;
+}
+.c{
+    color: rgba(0, 72, 255, 0.598);
+}
+.c:hover{
+    text-decoration: underline;
+}
+.d{
+    color: rgba(0, 72, 255, 0.598); 
+}
+.d:hover{
+   text-decoration: underline;
+}
+/* 志浩 */
+.hwe {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+
+
+}
+
+.hwe>img {
+    width: 400px;
+    height: 209px;
+}
+
+.suibian {
+    width: 503px;
+    font-size: 15px;
+
+}
+
+.hs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    color: #0070c9;
+}
+
+.ios {
+    width: 300px;
+}
+
+.lo {
+    width: 100%;
+    height: 450px;
+    background-image: url(https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/psp-hero-banner-homepage-getsupport.image.large_2x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ke {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.fb {
+    margin: 100px;
+}
+
+.fb {
+    display: left;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.fb>img {
+    height: 209px;
+    width: 400px;
+    float: right;
+}
+
+.di {
+    width: 390px;
+    font-size: 36px;
+}
+
+.th {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    color: #0070c9;
+}
+
+.fi {
+    width: 400px;
+    font-weight: 100;
+}
+
+.lo>img {
+    height: 450px;
+    width: 1800px;
+
+}
+
+.du{
+    padding-top: 60px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.vi{
+    font-size: 30.5px;
+}
+/* 俊雁 */
+.lianXi{
+    background-color: #f2f2f2;
+}
+.Yan_lianxi{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    border-bottom: 1px solid #dedede;
+}
+.Yan_lianxi:first-child{
+    font-weight: 200;
+}
+.Yan_lianxi>div:nth-child(2)>img{
+    width: 32px;
+    height: 32px;
+}
+.Yan_chanpin{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Yan_chanpin>div{
+    width: 90%;
+}
+.Yan_chanpin>div>div{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Yan_chanpin>div>div>div:nth-of-type(n+3) {
+    display: none;
+    font-weight: 100;
+    color: #555;
+}
+.Yan_di{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #555;
+}
+.Yan_dilan{
+    width: 90%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.Yan_dilan>div:nth-child(2){
+    display: flex;
+}
+.Yan_dilan>div:nth-child(2)>div{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 1px solid #dedede;
+}
+#yinsi{
+    border-left: none;
+    padding-left: 0px;
+}
+
+@media screen and (min-width:700px ) {
+    .Yan_chanpin>div>div>div:nth-of-type(n+3) {
+        display:inline;
+    }
+    .Yan_chanpin>div>div>div:nth-child(2){
+        display: none;
+    }
+    .Yan_chanpin>div{
+        display: grid;
+        width: 90%;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .Yan_chanpin>div>div{
+        flex-direction:column; 
+    }
+    .Yan_chanpin>div>div>*{
+        padding-top: 3px;
+        padding-bottom: 3px;  
+    }
+    .Yan_dilan{
+        flex-direction:row;
+    }
+    #yinsi{
+        margin-left: 20px;
+    }
+}
+/* 文瑞 */
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    background-color: black;
+    background-size: 100%;
+}
+.muLu{
+    display: flex;
+     width: 1000px;
+     height: 44px;
+     justify-content: space-between;
+}
+.muLu *{
+    opacity: 0.8;
+}
+.muLu *:hover{
+    opacity: 1;
+}
+.caiDan{
+    display: none;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+}
+.pingGuo{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+
+}
+.shangDian{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/bcb062d0-0f7f-51ad-9f75-fe0c5dd0772d/globalnav_links_store_image__d8z9vxma66c2_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+}
+.Mak{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_mac_image__fv4ktb435mum_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+}
+.iPad{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_ipad_image__fefum478f4uq_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+}
+.iPhone{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_iphone_image__dhepc4hn14cy_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+}
+.Watch{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_watch_image__dfo5u4bhooqe_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+}
+.Music{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_music_image__bewxrazzig02_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+}
+.jiShuZhiChi{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/bcb062d0-0f7f-51ad-9f75-fe0c5dd0772d/globalnav_links_support_image__b24reo1n4fbm_large.svg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+}
+.souSuo{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg);
+    background-repeat:no-repeat ;
+    background-position-y: 0%;
+    background-size:44px 90px ;
+}
+.daiZi{
+    height: 44px;
+    width: 44px;
+    background-image: url(https://www.apple.com/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg);
+    background-repeat:no-repeat ;
+    background-position: 50%;
+}
+/* 响应式 */
+@media (max-width:770px){
+    header{
+        height: 48px;
+    }
+    .caiDan{
+        display: flex;
+    }
+    .pingGuo{
+        background-size: 19px;
+    }
+    .shangDian{
+    display: none;
+}
+    .Mak{
+    display: none;
+}
+    .iPad{
+    display: none;
+}
+    .iPhone{
+    display: none;
+}
+    .Watch{
+    display: none;
+}
+    .Music{
+    display: none;
+}
+    .jiShuZhiChi{
+    display: none;
+}
+    .souSuo{
+    display: none;
+}
+    }
